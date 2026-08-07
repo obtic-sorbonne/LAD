@@ -1,0 +1,84 @@
+# Per-source configuration. Adding a Tier 2/3 source means adding an entry
+# here plus one new connector class in src/lad/connectors/ -- nothing else
+# in the pipeline needs to change.
+
+unesco_thesaurus:
+  enabled: true
+  kind: vocabulary
+  base_url: https://vocabularies.unesco.org/thesaurus/en
+  download_url: https://vocabularies.unesco.org/exports/thesaurus/latest/unesco-thesaurus.ttl
+  languages: [ar, en, fr]
+  auth: null
+  rate_limit_per_sec: 1
+  license_url: https://creativecommons.org/licenses/by-sa/3.0/igo/
+  license_note: "CC BY-SA 3.0 IGO"
+  contact: "k.elozeiri@gmail.com"
+
+europeana:
+  enabled: true
+  kind: records
+  base_url: https://api.europeana.eu/record/v2/search.json
+  auth: env:EUROPEANA_API_KEY
+  auth_param: wskey
+  # Tune this to focus the harvest -- it's a plain Europeana query string.
+  # "qf" filters are AND-combined (each list entry becomes a repeated qf=
+  # param). Verified live: Europeana has NO Arabic-tagged content at all
+  # (LANGUAGE:ar = 0 results across all 39 language values in its facet) --
+  # so this is filtered for French only. Arabic coverage has to come from
+  # UNESCO Thesaurus / UNESDOC / WDL instead. This combination matched
+  # 829,645 records live (down from 21.7M unfiltered).
+  default_query: 'museum OR "cultural heritage" OR heritage OR archaeology'
+  default_qf:
+    - 'TYPE:(IMAGE OR TEXT)'
+    - 'LANGUAGE:fr'
+  rate_limit_per_sec: 2
+  daily_request_cap: 10000
+  page_size: 100
+  license_url: https://pro.europeana.eu/page/rights
+  license_note: "Metadata mostly CC0; per-item edmRights governs media reuse"
+  contact: "k.elozeiri@gmail.com"
+
+unesdoc:
+  enabled: true
+  kind: records
+  # search/ is paginated but capped at start+rows<=10000 by the server;
+  # download/ has no such cap -- see connector docstring. One-shot bulk pull.
+  base_url: https://data.unesco.org/api/records/1.0/search/
+  download_url: https://data.unesco.org/api/records/1.0/download/
+  dataset: doc001
+  bulk_rows: 500000
+  auth: null
+  rate_limit_per_sec: 2
+  license_url: https://en.unesco.org/terms-use-unesco-websites
+  license_note: "UNESCO Open Access / CC BY-SA 3.0 IGO (verify per record)"
+  contact: "k.elozeiri@gmail.com"
+
+world_digital_library:
+  enabled: true
+  kind: records
+  base_url: https://www.loc.gov/collections/world-digital-library/
+  bulk_item_url: https://www.loc.gov/item/2020446966/
+  auth: null
+  rate_limit_per_sec: 1
+  page_size: 100
+  license_url: https://www.loc.gov/legal/
+  license_note: "Varies by item; Library of Congress rights statements apply"
+  contact: "k.elozeiri@gmail.com"
+
+getty_aat:
+  enabled: true
+  kind: vocabulary
+  sparql_url: https://vocab.getty.edu/sparql.json
+  page_size: 200
+  auth: null
+  rate_limit_per_sec: 2
+  license_url: https://www.getty.edu/about/opencontent.html
+  license_note: "ODC-BY"
+  contact: "k.elozeiri@gmail.com"
+
+# Tier 2 placeholder -- disabled until a connector is implemented.
+wikidata:
+  enabled: false
+  kind: entities
+  base_url: https://query.wikidata.org/sparql
+  license_note: "CC0"

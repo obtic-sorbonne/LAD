@@ -1,0 +1,39 @@
+[project]
+name = "lad"
+version = "0.1.0"
+description = "Multilingual heritage data collection pipeline (Arabic/French/English)"
+requires-python = ">=3.11"
+dependencies = [
+    "httpx>=0.27",
+    "tenacity>=8.2",
+    "pydantic>=2.6",
+    "pyyaml>=6.0",
+    "rdflib>=7.0",
+    "pyarrow>=15.0",
+    "typer>=0.12",
+    "python-dotenv>=1.0",
+    "nltk>=3.9",
+    "camel-tools>=1.5",
+    "huggingface_hub>=0.24",
+    "sentence-transformers>=3.0",
+    "faiss-cpu>=1.8",
+    "anthropic>=0.34",
+    "openpyxl>=3.1",
+    "pypdf>=4.0",
+    "rank-bm25>=0.2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+
+[project.scripts]
+lad = "lad.cli:app"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,234 @@
+{
+  "apikey": "api2demo",
+  "success": true,
+  "requestNumber": 999,
+  "itemsCount": 100,
+  "totalResults": 21706199,
+  "items": [
+    {
+      "completeness": 0,
+      "country": [
+        "United Kingdom"
+      ],
+      "dataProvider": [
+        "Archaeology Data Service"
+      ],
+      "dcCreator": [
+        "A Passmore"
+      ],
+      "dcCreatorLangAware": {
+        "en": [
+          "A Passmore"
+        ]
+      },
+      "dcDescription": [
+        "An archaeological assessment of stabilisation of the Beach Road was prepared for inclusion within an environmental assessment. The proximity of the medieval Marisco Castle was noted. All identified sites on or near the road are of post-medieval date."
+      ],
+      "dcDescriptionLangAware": {
+        "en": [
+          "An archaeological assessment of stabilisation of the Beach Road was prepared for inclusion within an environmental assessment. The proximity of the medieval Marisco Castle was noted. All identified sites on or near the road are of post-medieval date."
+        ]
+      },
+      "dcLanguage": [
+        "English",
+        "eng"
+      ],
+      "dcLanguageLangAware": {
+        "def": [
+          "eng"
+        ],
+        "en": [
+          "English"
+        ]
+      },
+      "dcSubjectLangAware": {
+        "def": [
+          "http://vocab.getty.edu/page/aat/300379558",
+          "http://vocab.getty.edu/page/aat/300054328"
+        ]
+      },
+      "dcTitleLangAware": {
+        "en": [
+          "Archaeology and Cultural Heritage"
+        ]
+      },
+      "dctermsSpatial": [
+        "1100306#place"
+      ],
+      "edmDatasetName": [
+        "2020708_Ag_EU_CARARE_ADS"
+      ],
+      "edmIsShownAt": [
+        "https://doi.org/10.5284/1002477"
+      ],
+      "edmPlace": [
+        "1100306#place"
+      ],
+      "edmPlaceLabel": [
+        {
+          "def": "Lundy Island Beach Road LUNDY DEVON TORRIDGE England"
+        }
+      ],
+      "edmPlaceLabelLangAware": {
+        "en": [
+          "Lundy Island Beach Road LUNDY DEVON TORRIDGE England"
+        ]
+      },
+      "edmPlaceLatitude": [
+        "51.163246"
+      ],
+      "edmPlaceLongitude": [
+        "-4.65813"
+      ],
+      "europeanaCollectionName": [
+        "2020708_Ag_EU_CARARE_ADS"
+      ],
+      "europeanaCompleteness": 0,
+      "guid": "https://www.europeana.eu/item/2020708/ADSlibrary_1100306?utm_source=api&utm_medium=api&utm_campaign=api2demo",
+      "id": "/2020708/ADSlibrary_1100306",
+      "index": 0,
+      "language": [
+        "en"
+      ],
+      "link": "https://api.europeana.eu/record/2020708/ADSlibrary_1100306.json?wskey=api2demo",
+      "organizations": [
+        "http://data.europeana.eu/organization/4251",
+        "http://data.europeana.eu/organization/1617"
+      ],
+      "previewNoDistribute": false,
+      "provider": [
+        "CARARE"
+      ],
+      "rights": [
+        "http://rightsstatements.org/vocab/InC-EDU/1.0/"
+      ],
+      "score": 204.42532,
+      "timestamp": 1752043576499,
+      "timestamp_created": "2020-08-28T01:57:51.943Z",
+      "timestamp_created_epoch": 1598579871943,
+      "timestamp_update": "2022-07-25T11:21:26.369Z",
+      "timestamp_update_epoch": 1658748086369,
+      "title": [
+        "Archaeology and Cultural Heritage"
+      ],
+      "type": "TEXT",
+      "ugc": [
+        false
+      ]
+    },
+    {
+      "completeness": 0,
+      "country": [
+        "United Kingdom"
+      ],
+      "dataProvider": [
+        "Archaeology Data Service"
+      ],
+      "dcCreator": [
+        "K Holland"
+      ],
+      "dcCreatorLangAware": {
+        "en": [
+          "K Holland"
+        ]
+      },
+      "dcDescription": [
+        "This Archaeological and Heritage Desk-Based Assessment was prepared to inform a store development proposal in Erdington. Research idenitified a medieval village within the development site. This, alongside a project brief from the Birmingham Ciy Archaeologist led to the recommendation of evaluation excavation in the areas of higher potential."
+      ],
+      "dcDescriptionLangAware": {
+        "en": [
+          "This Archaeological and Heritage Desk-Based Assessment was prepared to inform a store development proposal in Erdington. Research idenitified a medieval village within the development site. This, alongside a project brief from the Birmingham Ciy Archaeologist led to the recommendation of evaluation excavation in the areas of higher potential."
+        ]
+      },
+      "dcLanguage": [
+        "English",
+        "eng"
+      ],
+      "dcLanguageLangAware": {
+        "def": [
+          "eng"
+        ],
+        "en": [
+          "English"
+        ]
+      },
+      "dcSubjectLangAware": {
+        "def": [
+          "http://vocab.getty.edu/page/aat/300379558",
+          "http://vocab.getty.edu/page/aat/300054328"
+        ],
+        "en": [
+          "Village"
+        ]
+      },
+      "dcTitleLangAware": {
+        "en": [
+          "Archaeology and Cultural Heritage Desk Based Assessment"
+        ]
+      },
+      "dctermsSpatial": [
+        "1122761#place"
+      ],
+      "edmDatasetName": [
+        "2020708_Ag_EU_CARARE_ADS"
+      ],
+      "edmIsShownAt": [
+        "https://doi.org/10.5284/1023597"
+      ],
+      "edmPlace": [
+        "1122761#place"
+      ],
+      "edmPlaceLabel": [
+        {
+          "def": "Sainsbury&#8217;s Development, Erdington BIRMINGHAM WEST MIDLANDS BIRMINGHAM England"
+        }
+      ],
+      "edmPlaceLabelLangAware": {
+        "en": [
+          "Sainsbury&#8217;s Development, Erdington BIRMINGHAM WEST MIDLANDS BIRMINGHAM England"
+        ]
+      },
+      "edmPlaceLatitude": [
+        "52.52774"
+      ],
+      "edmPlaceLongitude": [
+        "-1.835295"
+      ],
+      "europeanaCollectionName": [
+        "2020708_Ag_EU_CARARE_ADS"
+      ],
+      "europeanaCompleteness": 0,
+      "guid": "https://www.europeana.eu/item/2020708/ADSlibrary_1122761?utm_source=api&utm_medium=api&utm_campaign=api2demo",
+      "id": "/2020708/ADSlibrary_1122761",
+      "index": 0,
+      "language": [
+        "en"
+      ],
+      "link": "https://api.europeana.eu/record/2020708/ADSlibrary_1122761.json?wskey=api2demo",
+      "organizations": [
+        "http://data.europeana.eu/organization/4251",
+        "http://data.europeana.eu/organization/1617"
+      ],
+      "previewNoDistribute": false,
+      "provider": [
+        "CARARE"
+      ],
+      "rights": [
+        "http://rightsstatements.org/vocab/InC-EDU/1.0/"
+      ],
+      "score": 178.62114,
+      "timestamp": 1752043638807,
+      "timestamp_created": "2020-08-28T01:57:51.943Z",
+      "timestamp_created_epoch": 1598579871943,
+      "timestamp_update": "2022-07-25T11:21:26.369Z",
+      "timestamp_update_epoch": 1658748086369,
+      "title": [
+        "Archaeology and Cultural Heritage Desk Based Assessment"
+      ],
+      "type": "TEXT",
+      "ugc": [
+        false
+      ]
+    }
+  ]
+}

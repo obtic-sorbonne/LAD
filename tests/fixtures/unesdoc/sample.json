@@ -1,0 +1,40 @@
+[
+  {
+    "datasetid": "doc001",
+    "recordid": "6e8b3e4699da2286fc64fb0ec870b490c47fb16f",
+    "fields": {
+      "uuid": "dc899dab-618f-5f40-9786-22a50e799d51",
+      "subject": "Nuclear explosions,Disaster relief,International cooperation,Educational programmes,Scientific programmes,Social programmes,Cultural programmes,Communication programmes,UNESCO-Chernobyl Programme,UNESCO -- Aims and activities",
+      "url": "https://unesdoc.unesco.org/ark:/48223/pf0000147072",
+      "document_type": "programme and meeting document",
+      "title": "UNESCO Chernobyl Programme: programme framework",
+      "cover_url": "https://unesdoc.unesco.org/in/rest/Thumb/image?id=pf0000147072&author=Unknown&title=UNESCO+Chernobyl+Programme%3A+programme+framework&year=1990&TypeOfDocument=UnescoPhysicalDocument&mat=PGD&ct=true&size=512&isPhysical=1&siteId=mainSite",
+      "coverage": "Ukrainian SSR",
+      "language": "eng",
+      "format": "102 p., illus., maps, Electronic, Paper, online resource, volume",
+      "type": "programme and meeting document",
+      "year": "1990",
+      "relation": "https://unesdoc.unesco.org/in/rest/api/getNoticeAttachment?noticeId=0000147072"
+    },
+    "record_timestamp": "2026-06-01T14:18:00Z"
+  },
+  {
+    "datasetid": "doc001",
+    "recordid": "3b15d5622c626ddd67206c8b6dd352b5e996517f",
+    "fields": {
+      "uuid": "53084205-754e-5eec-93cd-37a98f0f385b",
+      "subject": "Nuclear explosions,Disaster relief,International cooperation,Educational programmes,Scientific programmes,Social programmes,Cultural programmes,Communication programmes,UNESCO-Chernobyl Programme,UNESCO -- Aims and activities",
+      "url": "https://unesdoc.unesco.org/ark:/48223/pf0000147072/fre",
+      "document_type": "programme and meeting document",
+      "title": "Programme UNESCO/Tchernobyl: cadre général du programme",
+      "cover_url": "https://unesdoc.unesco.org/in/rest/Thumb/image?id=pf0000147072&author=Unknown&title=Programme+UNESCO%2FTchernobyl%3A+cadre+g%C3%A9n%C3%A9ral+du+programme&year=1990&TypeOfDocument=UnescoPhysicalDocument&mat=PGD&ct=true&size=512&isPhysical=1&siteId=mainSite",
+      "coverage": "Ukrainian SSR",
+      "language": "fre",
+      "format": "102 p., illus., maps, Electronic, Paper, online resource, volume",
+      "type": "programme and meeting document",
+      "year": "1990",
+      "relation": "https://unesdoc.unesco.org/in/rest/api/getNoticeAttachment?noticeId=0000147072_fre"
+    },
+    "record_timestamp": "2026-06-01T14:18:00Z"
+  }
+]

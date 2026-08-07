@@ -1,0 +1,241 @@
+term_id,source_term,source_language,target_language,reference_label,n_hits_retrieved,p_at_5,r_at_10,mrr,semantic_relevance_at_5
+kalcium:5205,New Generation Sculpture,en,ar,نحت الجيل الجديد,10,0.0,0.0,0.0,0.8992781639099121
+kalcium:5205,New Generation Sculpture,en,fr,New Generation Sculpture,10,0.0,0.0,0.0,0.9069818258285522
+kalcium:5203,New British Sculpture,fr,ar,النحت البريطاني الجديد,10,0.0,0.0,0.0,0.8635765314102173
+kalcium:5203,New British Sculpture,fr,en,New British Sculpture,10,0.0,0.0,0.0,0.8952639698982239
+kalcium:3182,محفور,ar,en,chiselled,2,0.0,0.0,0.0,0.8529267907142639
+kalcium:3182,محفور,ar,fr,ciselé,6,0.0,0.0,0.0,0.8594101071357727
+kalcium:3559,model,en,ar,نموذج مصغّر,10,0.0,0.0,0.0,0.8483431339263916
+kalcium:3559,model,en,fr,maquette,10,0.0,0.0,0.0,0.8592116832733154
+kalcium:5185,art immersif,fr,ar,الفن الاندماجي,10,0.0,0.0,0.0,0.9089697003364563
+kalcium:5185,art immersif,fr,en,Immersive art,10,0.0,0.0,0.0,0.8891844749450684
+kalcium:5173,الفن الرقمي,ar,en,digital art,10,0.0,0.0,0.0,0.9312748908996582
+kalcium:5173,الفن الرقمي,ar,fr,art digital,10,0.0,0.0,0.0,0.8983591794967651
+kalcium:5206,New media art,en,ar,فن الوسائط الجديد,10,0.0,0.0,0.0,0.9031411409378052
+kalcium:5206,New media art,en,fr,arts des nouveaux médias,10,0.0,0.0,0.0,0.8946658968925476
+kalcium:5228,time-based media,fr,ar,أعمال فنية مؤقتة,10,0.0,0.0,0.0,0.9090157747268677
+kalcium:5228,time-based media,fr,en,time-based media,10,0.0,0.0,0.0,0.862829327583313
+kalcium:3280,زي موحد,ar,en,livery,10,0.0,0.0,0.0,0.8496265411376953
+kalcium:3280,زي موحد,ar,fr,livrée,10,0.0,0.0,0.0,0.8898550868034363
+kalcium:4488,Rajput,en,ar,راجبوت,10,0.0,0.0,0.0,0.8348069190979004
+kalcium:4488,Rajput,en,fr,Rajput,10,0.0,0.0,0.0,0.8147636651992798
+kalcium:3263,étiquette,fr,ar,المراسم,10,0.0,0.0,0.0,0.8268235921859741
+kalcium:3263,étiquette,fr,en,etiquette,10,0.2,1.0,1.0,0.9911211133003235
+kalcium:3266,الحرس السويسري,ar,en,Swiss Guard,7,0.0,0.0,0.0,0.8957319259643555
+kalcium:3266,الحرس السويسري,ar,fr,Garde suisse,10,0.0,0.0,0.0,0.8775042295455933
+kalcium:5197,narrative art,en,ar,الفن السردي,10,0.0,0.0,0.0,0.8925600051879883
+kalcium:5197,narrative art,en,fr,art narratif,10,0.0,0.0,0.0,0.8693673610687256
+kalcium:5234,Washington Colour School,fr,ar,مدرسة واشنطن للتلوين,10,0.0,0.0,0.0,0.8458170294761658
+kalcium:5234,Washington Colour School,fr,en,Washington Colour School,10,0.0,0.0,0.0,0.8454024791717529
+kalcium:5214,ما بعد الفن الاختزالي,ar,en,Post-Minimalism,2,0.0,0.0,0.0,0.8869996070861816
+kalcium:5214,ما بعد الفن الاختزالي,ar,fr,post-minimalisme,10,0.0,0.0,0.0,0.8833597898483276
+kalcium:4445,epic,en,ar,ملحمة,10,0.0,0.0,0.0,0.8977835178375244
+kalcium:4445,epic,en,fr,épopée,10,0.0,0.0,0.0,0.8840546607971191
+kalcium:4456,intertextualité,fr,ar,تناصّ,10,0.0,0.0,0.0,0.8559884428977966
+kalcium:4456,intertextualité,fr,en,intertextuality,10,0.0,0.0,0.0,0.8611457347869873
+kalcium:5188,الفن التفاعلي,ar,en,interactive art,10,0.0,0.0,0.0,0.8919726014137268
+kalcium:5188,الفن التفاعلي,ar,fr,art interactif,10,0.0,0.0,0.0,0.8755168914794922
+kalcium:5120,golden ratio,en,ar,النسبة الذهبية,10,0.0,0.0,0.0,0.8729185461997986
+kalcium:5120,golden ratio,en,fr,nombre d’or,10,0.0,0.0,0.0,0.8702771067619324
+kalcium:5127,stylisation,fr,ar,التنميط,10,0.0,0.0,0.0,0.8589185476303101
+kalcium:5127,stylisation,fr,en,stylization,5,0.0,0.0,0.0,0.8972318172454834
+kalcium:3288,قلم أحمر,ar,en,sanguine,5,0.0,0.0,0.0,0.8732885718345642
+kalcium:3288,قلم أحمر,ar,fr,sanguine,10,0.0,0.0,0.0,0.8616756200790405
+kalcium:3165,"edge, rim",en,ar,حافة,10,0.0,0.0,0.0,0.8452319502830505
+kalcium:3165,"edge, rim",en,fr,aile,7,0.0,0.0,0.0,0.9089030027389526
+kalcium:4804,laque,fr,ar,ورنيش اللك,10,0.0,0.0,0.0,0.8172109127044678
+kalcium:4804,laque,fr,en,lacquer,10,0.0,0.0,0.0,0.8505252599716187
+kalcium:420,الرسم الجداري,ar,en,mural,10,0.2,1.0,1.0,0.9541817307472229
+kalcium:420,الرسم الجداري,ar,fr,peinture murale,10,0.2,1.0,1.0,0.9781858921051025
+kalcium:4697,Ghaznavids,en,ar,الغزنويّون,10,0.0,0.0,0.0,0.8604809641838074
+kalcium:4697,Ghaznavids,en,fr,Ghaznavides,10,0.0,0.0,0.0,0.8320270776748657
+kalcium:3238,tesson,fr,ar,قطعة أو كِسرة من الخزف أو الفخّار,10,0.0,0.0,0.0,0.8655645847320557
+kalcium:3238,tesson,fr,en,tesson,3,0.0,0.0,0.0,0.8566401600837708
+kalcium:4428,بنغال,ar,en,Bengal,10,0.8,1.0,1.0,0.9496701955795288
+kalcium:4428,بنغال,ar,fr,Bengale,10,0.0,0.0,0.0,0.9063428044319153
+kalcium:4751,Qajar,en,ar,الدولة القاجارية,10,0.0,0.0,0.0,0.8717622756958008
+kalcium:4751,Qajar,en,fr,Qadjar,10,0.0,0.0,0.0,0.8682576417922974
+kalcium:4778,Targoum,fr,ar,الترجوم,10,0.0,0.0,0.0,0.8619579672813416
+kalcium:4778,Targoum,fr,en,targum,2,0.0,0.0,0.0,0.8664252758026123
+kalcium:4664,سفر الرؤيا,ar,en,Book of Revelation,4,0.0,0.0,0.0,0.8508616089820862
+kalcium:4664,سفر الرؤيا,ar,fr,Apocalypse,10,0.0,0.0,0.0,0.9204854369163513
+kalcium:1448,Buddhism,en,ar,البوذية,10,0.0,0.0,0.0,0.897736668586731
+kalcium:1448,Buddhism,en,fr,Bouddhisme,10,0.2,1.0,1.0,1.0
+kalcium:4694,Exégète,fr,ar,مفسّر,10,0.0,0.0,0.0,0.8902106285095215
+kalcium:4694,Exégète,fr,en,exegete,1,0.0,0.0,0.0,0.8655857443809509
+kalcium:4847,علبة سجائر,ar,en,cigarette case,6,0.0,0.0,0.0,0.8740364909172058
+kalcium:4847,علبة سجائر,ar,fr,étui à cigarettes / porte-cigarettes,10,0.0,0.0,0.0,0.8675115704536438
+kalcium:4835,clip,en,ar,مشبك,10,0.0,0.0,0.0,0.8319302797317505
+kalcium:4835,clip,en,fr,clip,10,0.0,0.0,0.0,0.8455503582954407
+kalcium:4873,parure,fr,ar,حلية/طقم مجوهرات,10,0.0,0.0,0.0,0.8955560326576233
+kalcium:4873,parure,fr,en,parure/set of jewellery,10,0.0,0.0,0.0,0.8753464818000793
+kalcium:4884,حجر كريم زخرفيّ,ar,en,decorative gemstone,4,0.0,0.0,0.0,0.887726902961731
+kalcium:4884,حجر كريم زخرفيّ,ar,fr,pierre ornementale,2,0.0,0.0,0.0,0.9055649042129517
+kalcium:5135,iconography,en,ar,الصور الرمزيّة,10,0.0,0.0,0.0,0.9235079884529114
+kalcium:5135,iconography,en,fr,iconographie,10,0.0,0.0,0.0,0.9178287982940674
+kalcium:4834,chevron,fr,ar,شارة,10,0.0,0.0,0.0,0.883265495300293
+kalcium:4834,chevron,fr,en,chevron,8,0.0,0.0,0.0,0.8837048411369324
+kalcium:1497,حيواني الشكل,ar,en,zoomorph / zoomorphic,3,0.0,0.0,0.0,0.8770542740821838
+kalcium:1497,حيواني الشكل,ar,fr,Zoomorphe / zoomorphique,10,0.0,0.0,0.0,0.9002090692520142
+kalcium:4423,antiheroes,en,ar,أبطال مزيّفون,10,0.0,0.0,0.0,0.8735417127609253
+kalcium:4423,antiheroes,en,fr,antihéros,7,0.0,0.0,0.0,0.8385157585144043
+kalcium:4501,tamoul,fr,ar,اللّغة التاميليّة,10,0.0,0.0,0.0,0.9398335218429565
+kalcium:4501,tamoul,fr,en,Tamil,10,0.2,1.0,1.0,1.0
+kalcium:4495,اللغة السنسكريتيّة,ar,en,Sanskrit,10,0.2,1.0,1.0,1.0
+kalcium:4495,اللغة السنسكريتيّة,ar,fr,sanskrit,10,0.2,1.0,1.0,0.971468985080719
+kalcium:346,Illumination,en,ar,التذهيب، النمنمة,10,0.0,0.0,0.0,0.8343955278396606
+kalcium:346,Illumination,en,fr,Enluminure,10,0.0,0.0,0.0,0.9069762825965881
+kalcium:4753,Quaternion,fr,ar,دفتر,10,0.0,0.0,0.0,0.9127387404441833
+kalcium:4753,Quaternion,fr,en,quaternion / quire,10,0.0,0.0,0.0,0.8681231737136841
+kalcium:4426,مذبح محمول,ar,en,portable shrine,6,0.0,0.0,0.0,0.8393076658248901
+kalcium:4426,مذبح محمول,ar,fr,autel portatif,10,0.0,0.0,0.0,0.8515180945396423
+kalcium:3175,chalice,en,ar,كأس المناولة,10,0.0,0.0,0.0,0.8608578443527222
+kalcium:3175,chalice,en,fr,calice,7,0.0,0.0,0.0,0.8561280369758606
+kalcium:4812,amulette,fr,ar,تميمة,10,0.0,0.0,0.0,0.9172354340553284
+kalcium:4812,amulette,fr,en,amulet,6,0.0,0.0,0.0,0.87211012840271
+kalcium:4668,تابوت العهد؛ تابوت الرّب,ar,en,Ark of the Covenant,5,0.0,0.0,0.0,0.8291457891464233
+kalcium:4668,تابوت العهد؛ تابوت الرّب,ar,fr,Arche d’alliance,10,0.0,0.0,0.0,0.888310432434082
+kalcium:5161,Anthropocene,en,ar,عصر الأنثروبوسين,10,0.0,0.0,0.0,0.8802722096443176
+kalcium:5161,Anthropocene,en,fr,Anthropocène,10,0.0,0.0,0.0,0.8909077644348145
+kalcium:2951,paysage,fr,ar,منظر طبيعي,10,0.0,0.0,0.0,0.950131356716156
+kalcium:2951,paysage,fr,en,landscape,10,0.4,1.0,1.0,0.964870810508728
+kalcium:3169,مِرشّة,ar,en,sprinkler,10,0.0,0.0,0.0,0.8706901669502258
+kalcium:3169,مِرشّة,ar,fr,aspersoir,7,0.0,0.0,0.0,0.8505256175994873
+kalcium:252,Environmental art,en,ar,الفن البيئي,10,0.0,0.0,0.0,0.8971335291862488
+kalcium:252,Environmental art,en,fr,art environnemental,10,0.0,0.0,0.0,0.9214388132095337
+kalcium:4779,théophanie,fr,ar,الظهور الإلهي,10,0.0,0.0,0.0,0.8852137327194214
+kalcium:4779,théophanie,fr,en,theophany,2,0.0,0.0,0.0,0.8112415671348572
+kalcium:873,فن الأيقونات,ar,en,icon art,10,0.0,0.0,0.0,0.917272686958313
+kalcium:873,فن الأيقونات,ar,fr,icônes,10,0.0,0.0,0.0,0.9568343162536621
+kalcium:5219,Sacred Art,en,ar,الفن المقدّس,10,0.0,0.0,0.0,0.9210077524185181
+kalcium:5219,Sacred Art,en,fr,art sacré,10,0.0,0.0,0.0,0.9060646891593933
+kalcium:4666,Apotropaïque,fr,ar,دافع للشرّ,10,0.0,0.0,0.0,0.9095327854156494
+kalcium:4666,Apotropaïque,fr,en,apotropaic,1,0.0,0.0,0.0,0.8323068618774414
+kalcium:3293,النقش على الخشب، الطباعة الخشبية,ar,en,xylographic,10,0.0,0.0,0.0,0.8766741752624512
+kalcium:3293,النقش على الخشب، الطباعة الخشبية,ar,fr,xylographique (impression),10,0.0,0.0,0.0,0.9045600891113281
+kalcium:4919,incunable,en,ar,نسخة مطبوعة قديمة,10,0.0,0.0,0.0,0.9497599601745605
+kalcium:4919,incunable,en,fr,Incunable,6,0.0,0.0,0.0,0.8861640691757202
+kalcium:5109,zincographie,fr,ar,طباعة بالزنك,10,0.0,0.0,0.0,0.903648853302002
+kalcium:5109,zincographie,fr,en,zincography,10,0.0,0.0,0.0,0.8718105554580688
+kalcium:4918,صورة مطبوعة,ar,en,printed work,10,0.0,0.0,0.0,0.9169372916221619
+kalcium:4918,صورة مطبوعة,ar,fr,Imprimé,10,0.4,1.0,1.0,0.9407110214233398
+kalcium:5153,boteh,en,ar,البته,10,0.0,0.0,0.0,0.8563765287399292
+kalcium:5153,boteh,en,fr,bôteh,3,0.0,0.0,0.0,0.8211857080459595
+kalcium:5156,saz,fr,ar,طراز &quot;ساز&quot;,10,0.0,0.0,0.0,0.8030663728713989
+kalcium:5156,saz,fr,en,saz,3,0.0,0.0,0.0,0.8544237017631531
+kalcium:3212,سحب متدافعة,ar,en,billowing clouds,9,0.0,0.0,0.0,0.8486936092376709
+kalcium:3212,سحب متدافعة,ar,fr,nuages en volutes,10,0.0,0.0,0.0,0.8729100227355957
+kalcium:5158,cintamani,en,ar,نمط شينتاماني,10,0.0,0.0,0.0,0.8642834424972534
+kalcium:5158,cintamani,en,fr,Chintamani,6,0.0,0.0,0.0,0.8307703733444214
+kalcium:3213,ogives en quinconce,fr,ar,أقواس قطرية متداخلة,10,0.0,0.0,0.0,0.8774222135543823
+kalcium:3213,ogives en quinconce,fr,en,staggred rows of arches,2,0.0,0.0,0.0,0.8437737226486206
+kalcium:4850,إفريز,ar,en,frieze,6,0.0,0.0,0.0,0.8668006658554077
+kalcium:4850,إفريز,ar,fr,frise,8,0.0,0.0,0.0,0.877717137336731
+kalcium:3197,"gadrooned, fluted",en,ar,مزخرف بمفصّصات ناتئة أو غائرة,10,0.0,0.0,0.0,0.8244242072105408
+kalcium:3197,"gadrooned, fluted",en,fr,godronné,6,0.0,0.0,0.0,0.8168343305587769
+kalcium:5172,déconstructivisme,fr,ar,العمارة التفكيكية,10,0.0,0.0,0.0,0.883340060710907
+kalcium:5172,déconstructivisme,fr,en,deconstructivism,10,0.0,0.0,0.0,0.877927303314209
+kalcium:3237,تقنية الحرق البطيء,ar,en,low-fire technique,6,0.0,0.0,0.0,0.8474252820014954
+kalcium:3237,تقنية الحرق البطيء,ar,fr,Technique de petit feu,10,0.0,0.0,0.0,0.9032198190689087
+kalcium:1139,clay,en,ar,صلصال,10,0.2,1.0,0.25,0.9211806058883667
+kalcium:1139,clay,en,fr,argile,10,0.2,1.0,1.0,1.0
+kalcium:3218,Piédouche,fr,ar,قاعدة (الآنية),10,0.0,0.0,0.0,0.8095502257347107
+kalcium:3218,Piédouche,fr,en,base or pedestal,3,0.0,0.0,0.0,0.812824547290802
+kalcium:2427,خزف مزجّج,ar,en,faience,4,0.25,1.0,1.0,0.9529531002044678
+kalcium:2427,خزف مزجّج,ar,fr,faïence,10,0.0,0.0,0.0,0.8764736652374268
+kalcium:3179,binding warp,en,ar,سداة الربط,10,0.0,0.0,0.0,0.8638346791267395
+kalcium:3179,binding warp,en,fr,Chaîne de liage,4,0.0,0.0,0.0,0.854041576385498
+kalcium:3168,armure de fond,fr,ar,سداة النسيج,10,0.0,0.0,0.0,0.8944984674453735
+kalcium:3168,armure de fond,fr,en,"ground weave, foundation warp",4,0.0,0.0,0.0,0.8449881076812744
+kalcium:3232,حرير مطرّز,ar,en,silk brocade,3,0.0,0.0,0.0,0.8743569850921631
+kalcium:3232,حرير مطرّز,ar,fr,soie brochée,7,0.0,0.0,0.0,0.8924348950386047
+kalcium:3236,taffetas,en,ar,قماش التفتة، التفتة الحريرية,10,0.0,0.0,0.0,0.8532631397247314
+kalcium:3236,taffetas,en,fr,Taffetas,6,0.0,0.0,0.0,0.9004511833190918
+kalcium:5210,art participatif,fr,ar,الفن التشاركي,10,0.0,0.0,0.0,0.9029583930969238
+kalcium:5210,art participatif,fr,en,participatory art,10,0.0,0.0,0.0,0.8744118213653564
+kalcium:253,الفن العابر,ar,en,Ephemeral art,10,0.0,0.0,0.0,0.8667104244232178
+kalcium:253,الفن العابر,ar,fr,art éphémère,10,0.0,0.0,0.0,0.8681918978691101
+kalcium:481,Performance art,en,ar,فن الأداء,10,0.0,0.0,0.0,0.9005019664764404
+kalcium:481,Performance art,en,fr,performance,10,0.2,1.0,1.0,0.896909236907959
+kalcium:4471,mélodrames,fr,ar,أعمال ميلودراميّة,10,0.0,0.0,0.0,0.8922029733657837
+kalcium:4471,mélodrames,fr,en,melodramas,5,0.0,0.0,0.0,0.844096839427948
+kalcium:3172,حلقة الشمع,ar,en,candle-ring,3,0.0,0.0,0.0,0.8251310586929321
+kalcium:3172,حلقة الشمع,ar,fr,Bobèche,3,0.0,0.0,0.0,0.835572361946106
+kalcium:1639,decorative arts,en,ar,الفنون الزخرفية,10,0.0,0.0,0.0,0.980201780796051
+kalcium:1639,decorative arts,en,fr,arts décoratifs,10,0.2,1.0,1.0,0.9826765060424805
+kalcium:5150,style rocaille,fr,ar,طراز الروكاي,10,0.0,0.0,0.0,0.839436411857605
+kalcium:5150,style rocaille,fr,en,rocaille style,1,0.0,0.0,0.0,0.8167415857315063
+kalcium:4857,طلاء اللك بتصاميم زخرفيّة,ar,en,laque burgauté,3,0.0,0.0,0.0,0.8101756572723389
+kalcium:4857,طلاء اللك بتصاميم زخرفيّة,ar,fr,laque burgauté  (Japon),10,0.0,0.0,0.0,0.8514314293861389
+kalcium:127,calligraphy,en,ar,فن الخطّ,10,0.0,0.0,0.0,0.9322439432144165
+kalcium:127,calligraphy,en,fr,calligraphie,10,0.2,1.0,1.0,0.9869269132614136
+kalcium:170,collage,fr,ar,فن القصّ واللصق,10,0.0,0.0,0.0,0.8602665662765503
+kalcium:170,collage,fr,en,collage (fr.),5,0.0,0.0,0.0,0.8624123334884644
+kalcium:5170,فن الرسوم الهزلية المتتابعة,ar,en,comic strip art,10,0.0,0.0,0.0,0.9089645743370056
+kalcium:5170,فن الرسوم الهزلية المتتابعة,ar,fr,bande dessinée,5,0.2,1.0,1.0,1.0
+kalcium:706,graphic arts,en,ar,الفنون التصويرية,10,0.0,0.0,0.0,0.919194221496582
+kalcium:706,graphic arts,en,fr,arts graphiques,10,0.2,1.0,1.0,0.9836353063583374
+kalcium:5149,pochade,fr,ar,رسم أوّلي,10,0.0,0.0,0.0,0.9056429862976074
+kalcium:5149,pochade,fr,en,pochade,1,0.0,0.0,0.0,0.8401250243186951
+kalcium:234,رسم,ar,en,drawing,10,0.2,1.0,0.3333333333333333,0.9788002967834473
+kalcium:234,رسم,ar,fr,dessin,10,0.4,1.0,0.5,0.9566753506660461
+kalcium:1024,painting,en,ar,الرسم,10,0.0,0.0,0.0,0.9498124718666077
+kalcium:1024,painting,en,fr,peinture,10,0.4,1.0,1.0,0.9640604257583618
+kalcium:608,nature morte,fr,ar,طبيعة صامتة,10,0.0,0.0,0.0,0.9127997159957886
+kalcium:608,nature morte,fr,en,still life,10,0.0,0.0,0.0,0.8897726535797119
+kalcium:4431,شريط سينمائيّ ذو رواج كبير,ar,en,blockbuster,10,0.0,0.0,0.0,0.8629817366600037
+kalcium:4431,شريط سينمائيّ ذو رواج كبير,ar,fr,blockbuster,10,0.0,0.0,0.0,0.8569308519363403
+kalcium:4485,projectionists,en,ar,مشغّل آلة العرض السينمائيّ,10,0.0,0.0,0.0,0.8888258934020996
+kalcium:4485,projectionists,en,fr,projectionnistes,10,0.0,0.0,0.0,0.8736361265182495
+kalcium:4432,bobine,fr,ar,بكرة الشريط,10,0.0,0.0,0.0,0.8554340600967407
+kalcium:4432,bobine,fr,en,reel,10,0.0,0.0,0.0,0.8191334009170532
+kalcium:4466,شريط سينمائيّ طويل,ar,en,feature-length film,10,0.0,0.0,0.0,0.8836406469345093
+kalcium:4466,شريط سينمائيّ طويل,ar,fr,long-métrage,10,0.0,0.0,0.0,0.9143791198730469
+kalcium:5193,Minimalism,en,ar,الفنّ الاختزالي,10,0.0,0.0,0.0,0.8845908045768738
+kalcium:5193,Minimalism,en,fr,minimalisme,10,0.0,0.0,0.0,0.8967222571372986
+kalcium:3077,Décor au repoussé,fr,ar,زخرفة معدنية بالطّرق,10,0.0,0.0,0.0,0.8898751735687256
+kalcium:3077,Décor au repoussé,fr,en,repoussé decoration,6,0.0,0.0,0.0,0.8412806987762451
+kalcium:5190,السبك بطريقة الشمع المذاب,ar,en,lost-wax casting,4,0.0,0.0,0.0,0.8253514766693115
+kalcium:5190,السبك بطريقة الشمع المذاب,ar,fr,fonte a la cire perdue,10,0.0,0.0,0.0,0.8775562644004822
+kalcium:547,repoussé (fr.),en,ar,زخرفة المعادن بالطرق,10,0.0,0.0,0.0,0.85563725233078
+kalcium:547,repoussé (fr.),en,fr,repoussé,10,0.0,0.0,0.0,0.8775342702865601
+kalcium:4491,rétroéclairé,fr,ar,مضاءٌ من الخلف/ إضاءة خلفيّةً,10,0.0,0.0,0.0,0.8886178731918335
+kalcium:4491,rétroéclairé,fr,en,backlit,3,0.0,0.0,0.0,0.8560102581977844
+kalcium:217,التصوير الضوئي على ألواح مفضّضة,ar,en,daguerreotype,10,0.0,0.0,0.0,0.8562493324279785
+kalcium:217,التصوير الضوئي على ألواح مفضّضة,ar,fr,daguerréotype,10,0.0,0.0,0.0,0.8444576859474182
+kalcium:1033,photography,en,ar,التصوير الضوئي,10,0.0,0.0,0.0,0.9428454637527466
+kalcium:1033,photography,en,fr,photographie,10,0.4,1.0,1.0,0.9657980799674988
+kalcium:4781,tirage à l&apos;albumine,fr,ar,طباعة على ورق زلالي,10,0.0,0.0,0.0,0.915813684463501
+kalcium:4781,tirage à l&apos;albumine,fr,en,albumen print,10,0.0,0.0,0.0,0.8514022827148438
+kalcium:1458,وفاء عيني,ar,en,acceptance in lieu,10,0.0,0.0,0.0,0.8393383026123047
+kalcium:1458,وفاء عيني,ar,fr,Dation,10,0.0,0.0,0.0,0.931662917137146
+kalcium:5108,stained-glass window,en,ar,نافذة زجاجية ملوّنة,10,0.0,0.0,0.0,0.9043329358100891
+kalcium:5108,stained-glass window,en,fr,vitrail,6,0.0,0.0,0.0,0.8692622184753418
+kalcium:1195,verre,fr,ar,الزجاج,10,0.4,1.0,0.3333333333333333,0.9866376519203186
+kalcium:1195,verre,fr,en,glass,10,0.4,1.0,1.0,0.9862293004989624
+kalcium:3867,زجاج معشَّق,ar,en,stained glass,4,0.25,1.0,1.0,0.9883431196212769
+kalcium:3867,زجاج معشَّق,ar,fr,vitrail,5,0.0,0.0,0.0,0.8692622184753418
+kalcium:3240,carafe,en,ar,إبريق زجاجي,10,0.0,0.0,0.0,0.8897923827171326
+kalcium:3240,carafe,en,fr,Verseuse,8,0.0,0.0,0.0,0.8845391273498535
+kalcium:1780,Bleuâtre,fr,ar,مائل للزرقة,10,0.0,0.0,0.0,0.8717571496963501
+kalcium:1780,Bleuâtre,fr,en,Bluish,6,0.0,0.0,0.0,0.8591653108596802
+kalcium:5331,ألوان زيتية وقلم رصاص على قماش,ar,en,oil and pencil on canvas,10,0.0,0.0,0.0,0.8801265954971313
+kalcium:5331,ألوان زيتية وقلم رصاص على قماش,ar,fr,huile et crayon sur toile,10,0.0,0.0,0.0,0.8709324598312378
+kalcium:4994,Chibinda Ilunga,en,ar,تشيبيندا إيلونغا,10,0.0,0.0,0.0,0.8083559274673462
+kalcium:4994,Chibinda Ilunga,en,fr,Tshibinda Ilunga,10,0.0,0.0,0.0,0.833293080329895
+kalcium:224,Points diacritiques,fr,ar,تشكيل الحروف العربية,10,0.0,0.0,0.0,0.8782432079315186
+kalcium:224,Points diacritiques,fr,en,Diacritical points,2,0.0,0.0,0.0,0.8702880144119263
+kalcium:843,تنقيبات، حفريات أثرية,ar,en,Excavations,10,0.2,1.0,1.0,0.9614288806915283
+kalcium:843,تنقيبات، حفريات أثرية,ar,fr,Fouilles,10,0.0,0.0,0.0,0.9166224598884583
+kalcium:2810,"Impasse, blind alley",en,ar,زقاق مسدود,10,0.0,0.0,0.0,0.8443591594696045
+kalcium:2810,"Impasse, blind alley",en,fr,Impasse,7,0.0,0.0,0.0,0.8534370064735413
+kalcium:4044,plaza,fr,ar,ساحة، ميدان,10,0.0,0.0,0.0,0.9172507524490356
+kalcium:4044,plaza,fr,en,plaza (Sp.),3,0.0,0.0,0.0,0.8822939395904541
+kalcium:3699,أسْلوب بناء روماني تُخلطُ فيه الطوفا، وهي الرمادُ، البركانِيّ، بالجير,ar,en,opus caementicium (L.),2,0.0,0.0,0.0,0.8728531002998352
+kalcium:3699,أسْلوب بناء روماني تُخلطُ فيه الطوفا، وهي الرمادُ، البركانِيّ، بالجير,ar,fr,opus caementicium,2,0.0,0.0,0.0,0.8639345169067383
+kalcium:4301,pitched roof,en,ar,سطح جُملوني,10,0.0,0.0,0.0,0.9032068252563477
+kalcium:4301,pitched roof,en,fr,toit,3,0.3333333333333333,1.0,1.0,0.8575616478919983
+kalcium:1517,Affronté,fr,ar,متواجه,10,0.0,0.0,0.0,0.8850410580635071
+kalcium:1517,Affronté,fr,en,Affronted,6,0.0,0.0,0.0,0.8604235053062439
+kalcium:177,حلقة الانقلابَين الشمسيين,ar,en,Solsticial colure,4,0.0,0.0,0.0,0.8698391914367676
+kalcium:177,حلقة الانقلابَين الشمسيين,ar,fr,Colure des solstices,10,0.0,0.0,0.0,0.9217514991760254

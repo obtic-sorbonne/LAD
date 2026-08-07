@@ -1,0 +1,18 @@
+PREFIX :          <http://vocabularies.unesco.org/thesaurus/>
+PREFIX dct:       <http://purl.org/dc/terms/>
+PREFIX rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos:      <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd:       <http://www.w3.org/2001/XMLSchema#>
+
+:concept460  rdf:type      skos:Concept;
+        dct:modified       "2019-12-15T13:52:33+00:00"^^xsd:dateTime;
+        skos:inScheme      <http://vocabularies.unesco.org/thesaurus>;
+        skos:prefLabel     "اتصالات"@ar , "Communication"@en , "Communication"@fr;
+        skos:altLabel      "Communications"@en;
+        skos:scopeNote     "Interactive social process."@en;
+        skos:narrower      :concept461 .
+
+:concept461  rdf:type      skos:Concept;
+        skos:inScheme      <http://vocabularies.unesco.org/thesaurus>;
+        skos:prefLabel     "اتصال ثقافي"@ar , "Cultural communication"@en , "Communication culturelle"@fr;
+        skos:broader       :concept460 .
