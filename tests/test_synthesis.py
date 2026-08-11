@@ -6,18 +6,26 @@ from lad.rag.synthesis import synthesize
 
 
 class _StubMessages:
-    def __init__(self, response_text: str):
+    def __init__(self, response_text: str, prepend_thinking_block: bool = False):
         self._response_text = response_text
+        self._prepend_thinking_block = prepend_thinking_block
         self.last_call_kwargs = None
 
     def create(self, **kwargs):
         self.last_call_kwargs = kwargs
-        return SimpleNamespace(content=[SimpleNamespace(text=self._response_text)])
+        content = []
+        if self._prepend_thinking_block:
+            # Real extended-thinking responses put a ThinkingBlock (`.thinking`,
+            # no `.text`) before the text block -- content[0] isn't reliably
+            # the text block. Regression coverage for that live bug.
+            content.append(SimpleNamespace(type="thinking", thinking="reasoning about the term..."))
+        content.append(SimpleNamespace(type="text", text=self._response_text))
+        return SimpleNamespace(content=content)
 
 
 class _StubClient:
-    def __init__(self, response_text: str):
-        self.messages = _StubMessages(response_text)
+    def __init__(self, response_text: str, prepend_thinking_block: bool = False):
+        self.messages = _StubMessages(response_text, prepend_thinking_block=prepend_thinking_block)
 
 
 def _hit(passage_id, lang, text, reuse_risk="clear"):
@@ -89,3 +97,16 @@ def test_synthesize_sends_expected_prompt_content():
     assert "gilding" in sent_prompt
     assert "p1" in sent_prompt
     assert "gilding is applied to wood" in sent_prompt
+
+
+def test_synthesize_finds_text_block_past_a_leading_thinking_block():
+    # Regression test: 467/635 live synthesis calls in the LAD-publications
+    # eval crashed on `response.content[0].text` when extended thinking put
+    # a ThinkingBlock first (see PROJECT_STATUS.md). synthesize() must find
+    # the text block by type, not assume it's at position 0.
+    response_json = json.dumps({"equivalents": {}, "usage_note": None})
+    client = _StubClient(response_json, prepend_thinking_block=True)
+
+    record = synthesize("term", "en", {"en": [_hit("p1", "en", "term text")]}, "fake-embedder", client=client)
+
+    assert record.equivalents == {}

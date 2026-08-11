@@ -1,0 +1,21 @@
+.venv
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+.env
+
+# No trailing slash on these -- several are symlinks (into /workspace/kareem/lad/LAD_new,
+# where the actual harvested data/venv live) rather than real directories, and
+# gitignore's trailing-slash "directory only" patterns don't match symlinks.
+data/raw
+data/processed
+data/processed_parquet
+data/logs
+data/termbase
+data/passages
+data/embeddings
+data/hf_export
+data/raw_pdfs
+data/Export from Kalcium.xlsx
+stats.txt

@@ -73,6 +73,7 @@ def run_eval(
     retrieval_raw: list[dict[str, Any]] = []
     synthesis_raw: list[dict[str, Any]] = []
     errors = 0
+    error_details: list[dict[str, Any]] = []
 
     for row in gold_rows:
         term = row["source_term"]
@@ -113,8 +114,17 @@ def run_eval(
         if run_synthesis and hits_by_lang:
             try:
                 record = synthesize(term, lang, hits_by_lang, embedding_model=embedder.model_name)
-            except Exception:
+            except Exception as exc:
                 errors += 1
+                error_details.append(
+                    {
+                        "term_id": row.get("term_id"),
+                        "source_term": term,
+                        "source_language": lang,
+                        "error_type": type(exc).__name__,
+                        "error_message": str(exc),
+                    }
+                )
                 continue
             passage_text_by_id = {h.passage_id: h.text for hits in hits_by_lang.values() for h in hits}
             eq = equivalence_correctness(record, reference_equivalents)
@@ -143,6 +153,7 @@ def run_eval(
             "retrieval": {k: _avg(v) for k, v in retrieval_scores.items()},
             "synthesis": {k: _avg(v) for k, v in synthesis_scores.items()} if run_synthesis else None,
             "synthesis_errors": errors if run_synthesis else None,
+            "synthesis_error_details": error_details if run_synthesis else None,
         },
         "retrieval_raw": retrieval_raw,
         "synthesis_raw": synthesis_raw,

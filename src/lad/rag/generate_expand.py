@@ -69,10 +69,21 @@ class ClaudeGenerator:
     def generate(self, prompt: str) -> str:
         response = self._client.messages.create(
             model=self.model,
-            max_tokens=500,
+            # 500 proved too tight for rag/synthesis.py's identical call
+            # shape once extended thinking eats into the same budget (see
+            # that module's max_tokens comment) -- matching its headroom
+            # here pre-emptively rather than waiting to hit it live.
+            max_tokens=2048,
             messages=[{"role": "user", "content": prompt}],
         )
-        return response.content[0].text
+        # response.content[0] isn't reliably the text block -- a
+        # ThinkingBlock can come first when extended thinking is active
+        # (see rag/synthesis.py's _extract_text, same live bug).
+        for block in response.content:
+            if getattr(block, "type", None) == "text":
+                return block.text
+        block_types = [getattr(b, "type", type(b).__name__) for b in response.content]
+        raise ValueError(f"No text block in Claude response (content block types: {block_types})")
 
 
 class Jais2Generator:

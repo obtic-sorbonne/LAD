@@ -37,6 +37,20 @@ def _format_passages_block(hits_by_lang: dict[str, list[RetrievalHit]]) -> str:
     return "\n".join(lines)
 
 
+def _extract_text(response: anthropic.types.Message) -> str:
+    """response.content[0] isn't reliably the text block -- when extended
+    thinking is active, a ThinkingBlock (`.thinking`, no `.text`) comes
+    first. Find the actual text block by type instead of assuming
+    position. Live bug, not hypothetical: 467/635 synthesis calls in the
+    LAD-publications eval run crashed on `content[0].text` being a
+    ThinkingBlock (see PROJECT_STATUS.md)."""
+    for block in response.content:
+        if getattr(block, "type", None) == "text":
+            return block.text
+    block_types = [getattr(b, "type", type(b).__name__) for b in response.content]
+    raise ValueError(f"No text block in Claude response (content block types: {block_types})")
+
+
 def _parse_response(raw_text: str) -> dict:
     try:
         return json.loads(raw_text)
@@ -68,10 +82,16 @@ def synthesize(
 
     response = client.messages.create(
         model=llm_model,
-        max_tokens=1500,
+        # 1500 was too tight in practice: this model spends part of its
+        # budget on extended thinking before answering (see _extract_text),
+        # and 63/635 live calls in the LAD-publications eval either ran out
+        # of budget entirely mid-think (no text block at all) or got cut off
+        # partway through the JSON output ("Unterminated string..."). 4096
+        # gives real headroom for both thinking + a full structured response.
+        max_tokens=4096,
         messages=[{"role": "user", "content": prompt}],
     )
-    parsed = _parse_response(response.content[0].text)
+    parsed = _parse_response(_extract_text(response))
 
     equivalents: dict[str, list[AttestedEquivalent]] = {}
     for lang_code, entries in (parsed.get("equivalents") or {}).items():

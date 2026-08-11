@@ -268,19 +268,32 @@ def query(
         help="Fuse dense + BM25 lexical retrieval via RRF (rag/lexical_index.py, Phase 7). "
         "Needs `lad build-lexical-index` run first.",
     ),
+    index_model_name: Optional[str] = typer.Option(
+        None, "--index-model-name",
+        help="Load an alternate FAISS index variant by its embeddings/<name>/ directory "
+        "(default: the standard museum-subset LaBSE index). E.g. 'labse-plus-lad-publications'.",
+    ),
+    lexical_index_name: Optional[str] = typer.Option(
+        None, "--lexical-index-name",
+        help="Load an alternate BM25 index variant by its embeddings/<name>/ directory "
+        "(default: the standard museum-subset lexical index). E.g. 'lexical-plus-lad-publications'. "
+        "Only used with --lexical.",
+    ),
 ) -> None:
     """Run one term through lexical enrichment -> retrieval -> synthesis,
     print the structured result. Synthesis needs ANTHROPIC_API_KEY set."""
     from lad.rag.embeddings import Embedder
     from lad.rag.index import PassageIndex
-    from lad.rag.lexical_index import LexicalIndex
+    from lad.rag.lexical_index import LEXICAL_DIR, LexicalIndex
     from lad.rag.rerank import Reranker
     from lad.rag.retrieval import retrieve
+    from lad.storage.writer import DATA_DIR
 
     embedder = Embedder()
-    index = PassageIndex()
+    index = PassageIndex(model_name=index_model_name) if index_model_name else PassageIndex()
     reranker = Reranker() if rerank else None
-    lexical_index = LexicalIndex() if lexical else None
+    lexical_base_dir = (DATA_DIR / "embeddings" / lexical_index_name) if lexical_index_name else LEXICAL_DIR
+    lexical_index = LexicalIndex(base_dir=lexical_base_dir) if lexical else None
     gen = _build_generator(generator)
     hits_by_lang = retrieve(
         term, lang, index, embedder, top_k=top_k, reranker=reranker, generator=gen, lexical_index=lexical_index
@@ -330,22 +343,31 @@ def eval(
         help="Fuse dense + BM25 lexical retrieval via RRF (rag/lexical_index.py, Phase 7). "
         "Needs `lad build-lexical-index` run first.",
     ),
+    lexical_index_name: Optional[str] = typer.Option(
+        None, "--lexical-index-name",
+        help="Load an alternate BM25 index variant by its embeddings/<name>/ directory "
+        "(default: the standard museum-subset lexical index). E.g. 'lexical-plus-lad-publications' -- "
+        "pair with --index-model-name labse-plus-lad-publications to reproduce the Phase 7 "
+        "publications-gold-set A/B. Only used with --lexical.",
+    ),
 ) -> None:
     """Run a gold-standard set through the pipeline and print Part C
     metrics. Builds the standard gold set first if missing. Use
     --output-json/--output-csv-dir to save raw, reanalyzable results as
     files instead of only printing the averaged summary; use
-    --gold-set-path/--index-model-name to run the same pipeline against an
-    alternate gold set or FAISS index variant (e.g. to reproduce a
-    corpus-expansion A/B -- see PROJECT_STATUS.md)."""
+    --gold-set-path/--index-model-name/--lexical-index-name to run the same
+    pipeline against an alternate gold set or index variant (e.g. to
+    reproduce a corpus-expansion A/B -- see PROJECT_STATUS.md)."""
     from lad.rag.eval.report import write_csv, write_json
     from lad.rag.eval.run_eval import run_eval as run_eval_fn
     from lad.rag.index import PassageIndex
-    from lad.rag.lexical_index import LexicalIndex
+    from lad.rag.lexical_index import LEXICAL_DIR, LexicalIndex
+    from lad.storage.writer import DATA_DIR
 
     gen = _build_generator(generator)
     index_obj = PassageIndex(model_name=index_model_name) if index_model_name else None
-    lexical_index_obj = LexicalIndex() if lexical else None
+    lexical_base_dir = (DATA_DIR / "embeddings" / lexical_index_name) if lexical_index_name else LEXICAL_DIR
+    lexical_index_obj = LexicalIndex(base_dir=lexical_base_dir) if lexical else None
     results = run_eval_fn(
         run_synthesis=not no_synthesis,
         use_reranker=rerank,
